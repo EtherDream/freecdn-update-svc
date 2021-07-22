@@ -75,6 +75,7 @@ server {
     proxy_set_header          connection      upgrade;
     proxy_set_header          upgrade         $http_upgrade;
     proxy_http_version        1.1;
+    proxy_read_timeout        1800;
   }
 }
 ```
